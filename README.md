@@ -7,7 +7,7 @@
 Solarsystem was designed for a VR Google cardboard mobile Application using unity.
 Basically an educative demo aimed for primary students. 
 The aim is to create an interactive environment for students by introducing technological developement for a vivid experience.
-Using this app gives an environemnt to explore space in a 3d virtual reality. The position of camera is placed such that the planets can be viewed at 10-30 degree angle up, with the sun directly above the viewer to give a feel of exploration with a 360 degree view from all sides. With audio running on the back and planet information provided on gaze interation and tranformation of planet objects proviing factual info of how planet rotation works. The use of textures similar to real planets and planetary roation gives the imersive feeling.
+Using this app gives an environemnt to explore space in a 3d virtual reality. The position of camera is placed such that the planets can be viewed at 10-30 degree angle up, with the sun directly above the viewer to give a feel of exploration with a 360 degree view from all sides. With audio running on the back and planet information provided on gaze interation and tranformation of planet objects proviing physical info of how planet rotation works. The use of textures similar to real planets and planetary roation gives the imersive feeling.
 
 ####Steps
 
@@ -20,10 +20,11 @@ Add scripts to produce unique transformations. Rotation used for solar syatem mo
 The image viewer script was used to enable information window to pop up while gazing onto a planet.
 Add textures to each planet and check the emission so that the texture of each planet can be viewed. 
 We also add an additional point light inside the sun to give the experience of sun emitting light giving shadows on the planets. This shows how for example on earth, night and day happens with rotations.
-^ sided space material is added into the skybox to create the 'space'
+6 sided space material is added into the skybox to create the 'space'
 Download the googlecardboard package (GoogleVRForUnity-1.190.1) from github and import. From this, we select the emulators for the environment of google cardboard. Add GvrEventSystem, GvrEditorEmulator to sample scene. Add GvrReticlePointer under camera and a Raycaster script(enabling for use of googlevr). 
 Add the pointerphysicsraycaster on the camera to show a pointer for gaze interations.
 Add sounds onto objects(planets) the buring sound was added to the sun while the space sound added into the space.
+Convert the images and add to canvas. Add image script file to objects and place the info images. Add event trigger pointer enter and exit.
 
 ####Steps to create apk file:
 
